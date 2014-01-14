@@ -16,6 +16,7 @@ sections begins with oracle_configuration element:
 
 Second section of configuration file contains information about Mongo 
 server. This section starts with mongo_server element:
+
 	change ip_address_for_mongo field to your MongoDB's IP address
 	change port if MongoDB is running on another port
 	change collection_name_for_mongo to your MongoDB collection name
@@ -23,6 +24,7 @@ server. This section starts with mongo_server element:
 Third section of configuration file contains information about tables 
 which would be migrated. This section starts with tables element. This
 element can hold multiple data:
+
 	change table_name field to your Oracle table name
 	change collectionName to your MongoDB collection name
 	columns array can contain table field and mongo field matching.
