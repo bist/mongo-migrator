@@ -1,0 +1,25 @@
+oracle_configuration: 
+ username: username_of_db
+ password: password_of_db_user
+ ip: ip_address_for_db
+ instance: instance_name_for_db
+mongo_server:
+ ip: ip_address_for_mongo
+ port: 27017
+ collection: collection_name_for_mongo
+tables:
+- table_name: dbuser.table_name
+  collectionName: mongo_collection_name
+  columns:
+    ID: id
+    ACTIVATION_DATE: activationDate
+    DEACTIVATION_DATE: deactivationDate
+    IS_ACTIVE: active
+    LOCATION: location
+    ORDERS: orders
+- table_name: dbuser.another_username
+  collectionName: mongo_another_collection_name
+  columns:
+    NO: id
+    ADI: name
+    ACIKLAMA: description
